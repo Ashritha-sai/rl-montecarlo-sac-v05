@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Outputs / artifacts
+outputs_v05/
+*.zip
+*.npz
+*.png
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
