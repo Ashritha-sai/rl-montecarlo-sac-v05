@@ -20,7 +20,7 @@ def rollout(model, env, n_episodes=20):
 
 def main():
     env = MonteCarloLQREnv(seed=123)
-    model = SAC.load("outputs_v05/sac_montecarlo_lqr")
+    model = SAC.load("results/sac_montecarlo_lqr")
 
     rets = rollout(model, env, n_episodes=30)
     print("Evaluation over 30 episodes")

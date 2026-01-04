@@ -11,7 +11,7 @@ env/
 outputs_v05/
 *.zip
 *.npz
-*.png
+*.npy
 
 # OS / editors
 .DS_Store

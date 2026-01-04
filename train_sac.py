@@ -37,7 +37,7 @@ def moving_average(x, w=20):
 
 
 def main():
-    out_dir = "outputs_v05"
+    out_dir = "results"
     os.makedirs(out_dir, exist_ok=True)
 
     env = MonteCarloLQREnv(

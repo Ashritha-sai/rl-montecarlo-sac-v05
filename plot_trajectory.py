@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from stable_baselines3 import SAC
 from monte_carlo_env import MonteCarloLQREnv
 
-model = SAC.load("outputs_v05/sac_montecarlo_lqr")
+model = SAC.load("results/sac_montecarlo_lqr")
 env = MonteCarloLQREnv(seed=42)
 
 obs, _ = env.reset()
@@ -44,5 +44,5 @@ plt.grid(alpha=0.3)
 plt.legend()
 
 plt.tight_layout()
-plt.savefig("outputs_v05/state_norm_trajectory_smoothed.png", dpi=200)
+plt.savefig("results/state_norm_trajectory_smoothed.png", dpi=200)
 plt.show()

@@ -13,12 +13,12 @@ def main() -> None:
     parser.add_argument(
         "--model_path",
         type=str,
-        default="outputs_v05/sac_montecarlo_lqr",
+        default="results/sac_montecarlo_lqr",
         help="Path to saved SB3 SAC model (without .zip).",
     )
     parser.add_argument("--episodes", type=int, default=30, help="Number of evaluation episodes.")
     parser.add_argument("--seed", type=int, default=123, help="Environment seed.")
-    parser.add_argument("--out_dir", type=str, default="outputs_v05", help="Where to save the plot/data.")
+    parser.add_argument("--out_dir", type=str, default="results", help="Where to save the plot/data.")
     args = parser.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
